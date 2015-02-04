@@ -1,7 +1,6 @@
-gem 'capybara' 
-gem 'selenium-webdriver'
+source 'https://rubygems.org'
+
 gem 'rspec'
 gem 'rspec-expectations'
-gem 'poltergeist'
-gem "capybara-webkit", "1.0.0"
-gem 'rake'
+gem 'capybara'
+gem 'capybara-webkit'
