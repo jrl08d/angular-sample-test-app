@@ -19,6 +19,7 @@ RSpec.configure do |config|
   end
   
   config.after(:suite) do
+    puts ''
     puts 'Killing server...'
     kill_server
   end
@@ -33,7 +34,7 @@ end
 
 def start_server
   server_job = fork do
-    system "python -m SimpleHTTPServer"
+    system "python -m SimpleHTTPServer &>/dev/null"
   end
   
   Process.detach(server_job)
